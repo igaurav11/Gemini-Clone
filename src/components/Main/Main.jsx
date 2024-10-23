@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import { useContext } from "react";
 import "./Main.css";
-import { Context } from "../../Context/Contex";
+import { Context } from "../../context/Contex";
 
 const Main = () => {
     const {
@@ -21,7 +21,7 @@ const Main = () => {
         <div className="main">
             <div className="nav">
                 <p>Gemini</p>
-                <img src='images/boy.png' alt="" />
+                <img src="images/boy.png" alt="" />
             </div>
             <div className="main-container">
                 {!showResults ? (
@@ -40,7 +40,7 @@ const Main = () => {
                                 }
                             >
                                 <p>Suggest Some Place To Visit In India.</p>
-                                <img src='images/compass.png' alt="" />
+                                <img src="images/compass.png" alt="" />
                             </div>
                             <div
                                 className="card"
@@ -51,16 +51,21 @@ const Main = () => {
                                 }
                             >
                                 <p>Explain the process of photosynthesis in simple terms </p>
-                                <img src='images/compass.png' alt="" />
+                                <img src="images/compass.png" alt="" />
                             </div>
                             <div
                                 className="card"
                                 onClick={() =>
-                                    handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")
+                                    handleCardClick(
+                                        "How do you create a responsive navbar using CSS and JavaScript?"
+                                    )
                                 }
                             >
-                                <p>How do you create a responsive navbar using CSS and JavaScript?</p>
-                                <img src='images/bulb.png' alt="" />
+                                <p>
+                                    How do you create a responsive navbar using CSS and
+                                    JavaScript?
+                                </p>
+                                <img src="images/bulb.png" alt="" />
                             </div>
                             <div
                                 className="card"
@@ -70,19 +75,22 @@ const Main = () => {
                                     );
                                 }}
                             >
-                                <p>What are some essential skills for becoming a front-end developer?</p>
-                                <img src='images/code.png' alt="" />
+                                <p>
+                                    What are some essential skills for becoming a front-end
+                                    developer?
+                                </p>
+                                <img src="images/code.png" alt="" />
                             </div>
                         </div>
                     </>
                 ) : (
                     <div className="result">
                         <div className="result-title">
-                            <img src='images/boy.png' alt="" />
+                            <img src="images/boy.png" alt="" />
                             <p>{recentPrompt}</p>
                         </div>
                         <div className="result-data">
-                            <img src='images/icon.png' alt="" />
+                            <img src="images/icon.png" alt="" />
                             {loading ? (
                                 <div className="loader">
                                     <hr />
@@ -107,10 +115,10 @@ const Main = () => {
                             placeholder="Enter the Prompt Here"
                         />
                         <div>
-                            <img src='images/gallery.png' alt="" />
-                            <img src='images/mic.png' alt="" />
+                            <img src="images/gallery.png" alt="" />
+                            <img src="images/mic.png" alt="" />
                             <img
-                                src='images/send_icon.png'
+                                src="images/send_icon.png"
                                 alt=""
                                 onClick={() => {
                                     onSent();

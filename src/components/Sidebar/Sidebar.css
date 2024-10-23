@@ -16,7 +16,6 @@
   margin-left: 10px;
   cursor: pointer;
 }
-
 .sidebar .new-chat {
   margin-top: 50px;
   display: inline-flex;
@@ -29,7 +28,9 @@
   color: grey;
   cursor: pointer;
 }
-
+.sidebar .new-chat:hover{
+  background-color: #87a4dc;
+}
 .sidebar .recent{
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@
 }
 
 .sidebar .recent-entry:hover{
-    background-color: #d3dcee;
+    background-color: #87a4dc;
 }
 
 .sidebar .bottom{
